@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="io.bega.kduino.activities.BluetoothActivity">
+
+    <item android:id="@+id/action_buoy_unasign" android:title="@string/context_menu_connection_buoy"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_buoy_delete" android:title="@string/context_menu_delete_buoy"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+
+
+
+</menu>

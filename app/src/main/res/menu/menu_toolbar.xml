@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_menu_connect_device"
+        app:showAsAction="always"
+        android:enabled="false"
+        android:icon="@drawable/ic_action_disconnect_white_off"
+        android:title=""/>
+
+    <!--item
+        android:id="@+id/action_menu_bluetooth"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_bluetooth_white_off"
+        android:enabled="false"
+        android:title=""/>
+
+    <item
+        android:id="@+id/action_menu_wifi"
+        app:showAsAction="always"
+        android:enabled="false"
+        android:icon="@drawable/ic_action_wifi_white_off"
+        android:title=""/-->
+
+</menu>

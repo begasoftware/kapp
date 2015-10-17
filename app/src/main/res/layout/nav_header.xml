@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+    android:id="@+id/nav_header_root"
+android:layout_height="192dp"
+android:padding="16dp"
+android:theme="@style/ThemeOverlay.AppCompat.Dark"
+android:orientation="vertical"
+android:gravity="bottom">
+<!--ImageView
+    android:id="@+id/nav_header_image_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ciclops_header"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/kduino_station" /-->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/nav_header_title"
+    android:textColor="@android:color/white"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/nav_header_login_name"
+        android:layout_marginTop="8dp" /-->
+
+</LinearLayout>

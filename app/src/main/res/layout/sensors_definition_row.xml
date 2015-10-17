@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+   android:layout_margin="8dp"
+    android:padding="4dp"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:weightSum="3"
+        android:baselineAligned="false">
+        <!--LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_weight="2"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_definition_active"
+                android:id="@+id/sensor_definition_active_id"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/sensor_definition_active_cb_value"
+                />
+
+
+        </LinearLayout-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_definition_title"
+                android:id="@+id/sensor_definition_title"
+
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_definition_id"
+                android:id="@+id/sensor_definition_id_value"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:layout_marginRight="60dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_definition_depth"
+                android:id="@+id/sensor_dialog_txt_deep"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+
+            <io.bega.valuebar.ValueBar
+            android:id="@+id/sensor_definition_valueBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/sensor_definition_deep_value"
+                android:max="20"
+                android:visibility="gone"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

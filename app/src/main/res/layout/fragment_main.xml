@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rlRoot"
+    tools:context="io.bega.kduino.fragments.MainActivityFragment"
+    android:background="@color/colorControlNormal">
+
+    <!--Button
+            style="@style/BaseFontBold"
+            android:id="@+id/btnConnectToDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_states"
+            android:text="@string/main_menu_make_a_device"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_above="@+id/llMain"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+
+    <Button
+            style="@style/BaseFontBold"
+            android:id="@+id/btnMeasurementOption"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_states"
+            android:text="@string/main_menu_show_data"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_above="@+id/llMain"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+    <Button
+            style="@style/BaseFontBold"
+            android:id="@+id/btnConfigurationOption"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_states"
+            android:text="@string/main_menu_configuration"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_above="@+id/llMain"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           /-->
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:gravity="center">
+
+        <com.rey.material.widget.FloatingActionButton
+            android:id="@+id/button_bt_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:v_styleId="@array/fab"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"/>
+
+        <com.rey.material.widget.FloatingActionButton
+            android:id="@+id/button_bt_float_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout-->
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonColorPressed="@color/white_pressed"
+        app:fab_addButtonPlusIconColor="@color/half_black"
+        app:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+
+
+
+        <!--com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_make_kduino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_title="Make a KdUINO"
+            android:src="@drawable/ic_action_make_black"
+            app:fab_colorPressed="@color/white_pressed"/-->
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_connect_kduino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_bluetooth_black_24dp"
+            app:fab_title="Connect a KdUINO"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            android:src="@drawable/ic_action_all_buoy_light"
+            app:fab_title="@string/nav_data_kduino_title"
+            app:fab_colorPressed="@color/white_pressed"/>
+
+        <!--com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_iconSrc="@drawable/ic_settings_black_24dp"
+            app:fab_title="Settings"
+            app:fab_colorPressed="@color/white_pressed"/-->
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_button_howto_kduino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/white"
+        app:fab_title="@string/nav_tutorial_title"
+            android:src="@drawable/ic_action_tutorial"
+        app:fab_colorPressed="@color/white_pressed"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

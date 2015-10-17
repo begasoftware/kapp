@@ -1,0 +1,165 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.bega.kduino.fragments.bluetooth.DataCommandsFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:id="@+id/data_buttons"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/fragment_set_data_measuring"
+                />
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                >
+
+            </View>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+    <Button
+        style="@style/BaseFontBold"
+        android:id="@+id/btnManagerStartReadDataAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kduino_button"
+        android:text="@string/action_start_data"
+        android:textColor="@android:color/white"
+        android:onClick="clickView"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp" />
+
+        <Button
+            android:id="@+id/btnManagerEndReadDataAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kduino_button"
+            android:text="@string/action_end_data"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            style="@style/BaseFontBold"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/fragment_data_data"
+                />
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                >
+
+            </View>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnManagerTestSensors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kduino_button"
+            android:text="@string/action_test_sensors"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_weight="1"
+            style="@style/BaseFontBold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+    <Button
+        android:id="@+id/btnManagerCommandReadAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kduino_button"
+        android:text="@string/action_retrieve_data"
+        android:textColor="@android:color/white"
+        android:onClick="clickView"
+        android:layout_marginTop="5dp"
+        style="@style/BaseFontBold"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp" />
+
+        <Button
+            android:id="@+id/btnManagerCommandDeleteAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kduino_button"
+            android:text="@string/action_delete_data"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_marginTop="5dp"
+            style="@style/BaseFontBold"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp" />
+
+        </LinearLayout>
+
+        <!--Button
+            style="@style/BaseFontBold"
+            android:id="@+id/btnSendToServerData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/kduino_button"
+            android:text="@string/action_send_data_to_server"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:onClick="clickView"
+            android:layout_weight="1" /-->
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</FrameLayout>

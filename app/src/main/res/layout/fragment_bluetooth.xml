@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="io.bega.kduino.fragments.bluetooth.BluetoothActivityFragment">
+
+
+    <ListView android:id="@android:id/list" android:layout_width="match_parent"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@color/colorAccent"
+        android:layout_height="match_parent" />
+
+    <TextView android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonColorPressed="@color/white_pressed"
+        app:fab_addButtonPlusIconColor="@color/half_black"
+        app:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!--com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_activate_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_title="@string/bluetooth_connect"
+            app:fab_iconSize="18dp"
+            app:fab_iconSrc="@drawable/ic_bluetooth_black_24dp"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonColorPressed="@color/white_pressed"
+
+
+            /-->
+
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_search_bluetooth_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            android:scaleType="center"
+            android:src="@drawable/ic_bluetooth_black_24dp"
+            app:fab_title="@string/bluetooth_search_devices"
+            app:fab_colorPressed="@color/white_pressed"/>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

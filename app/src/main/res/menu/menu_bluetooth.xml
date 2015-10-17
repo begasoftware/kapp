@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="io.bega.kduino.activities.BluetoothActivity">
+
+    <item android:id="@+id/action_bluetooth_activate" android:title="@string/activate_bluetooth"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_bluetooth_search" android:title="@string/search_node_device"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_bluetooth_disconnect" android:title="@string/disconnect_bluetooth"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>

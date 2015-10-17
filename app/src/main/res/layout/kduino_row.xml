@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+
+    android:padding="4dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/kduino_row_image"
+        android:layout_below="@+id/sensor_dialog_txt_deep"
+        android:src="@drawable/kduino_marker"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:contentDescription="@string/KduinologoDescription" />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kduino_row_linear_user"
+        android:weightSum="2"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/kduino_row_image"
+        android:layout_centerVertical="true"
+        android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kduino_row_linear_name"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_define_name_of_kduino"
+            android:id="@+id/kduino_row_name_title"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/kduino_row_name_value"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_define_number_of_sensors"
+            android:id="@+id/kduino_row_sensors_title"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/kduino_row_sensors_value"
+            android:layout_weight="1"
+            />
+      />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kduino_row_linear_maker"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_define_kduino_marker"
+            android:id="@+id/kduino_row_maker_title"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/kduino_row_maker_value"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_define_kduino_user"
+            android:id="@+id/kduino_row_user_title"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/kduino_row_user_value"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+   />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+     <RelativeLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/front"
+            android:tag="front"
+
+
+           >
+    <ImageButton
+        android:id="@+id/custom_row_button_photo"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+         />
+ 
+        <!--  ImageView
+                style="@style/MyListImage"
+                android:contentDescription="@drawable/background_back"
+                android:id="@+id/custom_row_imageview"/
+                android:layout_toRightOf="@id/custom_row_imageview"
+                -->
+ 
+        <TextView
+              android:focusable="false"
+                 android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_weight="0.8"
+                android:textSize="24sp"
+               
+                android:id="@+id/custom_row_textview"/>
+        
+            <!--TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:padding="2dp"
+                android:layout_below="@id/custom_row_textview"
+               	android:textSize="12sp"
+                android:id="@+id/custom_row_text_description"/-->
+
+    <ImageButton
+        android:id="@+id/custom_row_button_delete"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+         />
+ 
+    </RelativeLayout>
+ 

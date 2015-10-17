@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.bega.kduino" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- database settings -->
+    <meta-data
+        android:name="DATABASE"
+        android:value="kdunio_control_data.db" />
+    <meta-data
+        android:name="VERSION"
+        android:value="3" />
+    <meta-data
+        android:name="QUERY_LOG"
+        android:value="true" />
+    <meta-data
+        android:name="DOMAIN_PACKAGE_NAME"
+        android:value="io.bega.kduino" />
+    .
+    <application
+        android:name=".kdUINOApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_final"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.App.Base.Kduino"
+        tools:replace="android:icon" >
+        <!--activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-->
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/title_activity_main" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MeasurementListActivity"
+            android:label="@string/title_measurement_list"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MeasurementDetailActivity"
+            android:label="@string/title_measurement_detail"
+            android:parentActivityName=".activities.MeasurementListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.bega.kduino.activities.MeasurementListActivity" />
+        </activity>
+        <activity
+            android:name=".activities.UserSettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.BluetoothActivity"
+            android:label="@string/title_activity_bluetooth"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.KdUINOSettingsActivity"
+            android:label="@string/title_activity_kd_uinosettings"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ShowDataActivity"
+            android:label="@string/title_activity_show_data"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".services.DownloadOffLineMap"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service android:name=".services.upload.UploadDataTaskService" />
+
+        <activity
+            android:name=".activities.HelpVideoActivity"
+            android:label="@string/title_activity_help_video"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.HelpKduinoActivity"
+            android:label="@string/title_activity_help_video" >
+        </activity>
+        <activity
+            android:name=".activities.MakeKdUINOActivity"
+            android:label="@string/title_activity_make_kd_uino"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <receiver android:name=".services.ConnectivityUpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.UserActivity"
+            android:label="@string/title_activity_user"
+            android:parentActivityName=".activities.MainActivity" >
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="io.bega.phonetutorial.activities.TutorialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.IntroductionActivity"
+            android:label="@string/title_activity_introduction"
+            android:theme="@style/Theme.App.Base.Kduino" >
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+    </application>
+
+</manifest>

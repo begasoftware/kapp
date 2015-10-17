@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="120dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorAccent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorAccent"
+            android:hint="@string/password"
+            android:gravity="center"
+            android:visibility="gone"
+            android:ems="10"
+            />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kduino_button"
+            android:text="@string/sign_in"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            style="@style/BaseFontBold"
+            />
+
+        <Button
+            android:id="@+id/btnRecoverPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="5dp"
+            style="@style/TitleShadow"
+            android:onClick="clickView"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btnEnterWithoutlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kduino_button"
+            android:text="@string/enternologin"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            style="@style/BaseFontBold"
+            android:onClick="clickView"
+            />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kduino_button"
+            android:text="@string/sign_up"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            style="@style/BaseFontBold"
+            android:onClick="clickView"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

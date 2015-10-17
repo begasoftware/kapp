@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/nav_section_kduino_title">
+        <menu>
+            <!--item
+                android:id="@+id/nav_first_make_kduino"
+                android:icon="@drawable/ic_action_make_white"
+                android:title="@string/nav_first_make_kduino_title" /-->
+
+            <item
+                android:id="@+id/nav_first_connect_kduino"
+                android:icon="@drawable/ic_bluetooth_black_24dp"
+                android:title="@string/nav_first_connect_kduino_title" />
+
+        </menu>
+    </item>
+    <item android:title="@string/nav_section_data_kduino_title" >
+        <menu>
+            <item
+                android:id="@+id/nav_data_map"
+                android:icon="@drawable/ic_action_globe_white"
+                android:title="@string/nav_data_kduino_title" />
+
+            <!--item
+                android:id="@+id/nav_data_kduino"
+                android:icon="@drawable/ic_dashboard_black_24dp"
+                android:title="@string/nav_data_analysis_my_data_title" /-->
+
+        </menu>
+
+    </item>
+    <item android:title="@string/nav_section_about_title" >
+        <menu>
+            <!--item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_action_grey"
+            android:title="@string/nav_about_login" /-->
+
+            <item
+                android:id="@+id/nav_video_help"
+                android:icon="@drawable/ic_help_white_24dp"
+                android:title="@string/nav_video_help_title" />
+
+            <item
+                android:id="@+id/nav_tutorial"
+                android:icon="@drawable/ic_action_tutorial_white"
+                android:title="@string/nav_tutorial_title" />
+
+            <!--item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_action_settings_white"
+                android:title="@string/nav_settings_title" /-->
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_action_info"
+                android:title="@string/nav_about_title" />
+        </menu>
+    </item>
+</menu>

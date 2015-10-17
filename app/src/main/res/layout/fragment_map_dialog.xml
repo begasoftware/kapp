@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.bega.kduino.fragments.MapDialogFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <org.osmdroid.views.MapView android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <Button
+            style="@style/BaseFontBold"
+            android:id="@+id/btn_selectPosition_Map"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_states"
+            android:text="@string/main_menu_configuration"
+            android:textColor="@android:color/white"
+            android:onClick="clickView"
+            android:layout_above="@+id/map"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+        />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+

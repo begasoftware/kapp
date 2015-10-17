@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="io.bega.kduino.fragments.KdUINOMapFragment">
+
+    <org.osmdroid.views.MapView android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonColorPressed="@color/white_pressed"
+        app:fab_addButtonPlusIconColor="@color/half_black"
+        app:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_show_all_buoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Show All buoys"
+            android:src="@drawable/ic_action_all_buoy_light"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+           />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_show_my_buoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            android:src="@drawable/ic_action_show_my_buoy_light"
+            app:fab_title="Show My buoys"
+           />
+
+        <!--com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_search_buoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_title="Search Buoy"
+            app:fab_colorPressed="@color/white_pressed"/ -->
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_button_get_my_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            android:src="@drawable/ic_action_position_light"
+            app:fab_title="Get My Position"
+         />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
